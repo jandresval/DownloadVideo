@@ -28,9 +28,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c01ab7d3-6115-411e-8f6b-de7c1efbc368" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo.iml" afterPath="$PROJECT_DIR$/DownloadVideo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DownloadVideo.iws" />
@@ -142,7 +139,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="25211">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="21641">
               <folding />
             </state>
           </provider>
@@ -849,7 +846,11 @@
       <created>1390403501968</created>
       <updated>1390403501968</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finish search in youtube and show results in ListView&#10;">
+      <created>1390403883783</created>
+      <updated>1390403883783</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -913,7 +914,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Finish search in youtube and show results in ListView" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish search in youtube and show results in ListView" />
+    <MESSAGE value="Finish search in youtube and show results in ListView&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish search in youtube and show results in ListView&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
