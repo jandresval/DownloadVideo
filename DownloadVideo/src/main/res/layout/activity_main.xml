@@ -12,10 +12,34 @@
         android:id="@+id/T_findVideo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:ems="15"
+        android:hint="@string/t_find_video_cd"
+        android:singleLine="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:ems="30"
-        android:hint="@string/t_find_video_cd" />
+        android:layout_alignParentLeft="true"
+        android:autoText="true" />
+
+    <Button
+        style="@android:style/ButtonBar"
+        android:layout_width="@dimen/width_icon_search"
+        android:layout_height="@dimen/height_icon_search"
+        android:id="@+id/b_find_video"
+        android:clickable="true"
+        android:singleLine="true"
+        android:background="@android:drawable/ic_menu_search"
+        android:alpha="1"
+        android:layout_alignTop="@+id/T_findVideo"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickSearchButton" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_Videos"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/T_findVideo"
+        android:choiceMode="singleChoice"
+        android:scrollingCache="false" />
 
 </RelativeLayout>

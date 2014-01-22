@@ -31,7 +31,14 @@ public class JsonParse {
            for(int i = 0; i < jsonArray.length(); i++){
                JSONObject r = jsonArray.getJSONObject(i);
                JSONObject title = (JSONObject) r.get("title");
-               ListData.add(new SuggestGetSet(r.getString("id"),title.getString("$t")));
+               JSONObject id = (JSONObject) r.get("id");
+               JSONArray linkArray = (JSONArray) r.get("link");
+               JSONObject link = linkArray.getJSONObject(3);
+               JSONObject content = (JSONObject)r.get("content");
+               JSONObject mediaGroup = (JSONObject)r.get("media$group");
+               JSONArray mediaThumbnailArray = (JSONArray)mediaGroup.get("media$thumbnail");
+               JSONObject mediaThumbnail = mediaThumbnailArray.getJSONObject(3);
+               ListData.add(new SuggestGetSet(id.getString("$t"),title.getString("$t"),link.getString("href"),content.getString("$t"),mediaThumbnail.getString("url")));
            }
        }
         catch(MalformedURLException e1){
@@ -44,5 +51,6 @@ public class JsonParse {
        }
         return ListData;
 	}
+
 
 }
