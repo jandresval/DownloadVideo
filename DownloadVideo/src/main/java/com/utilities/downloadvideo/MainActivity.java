@@ -1,6 +1,6 @@
 package com.utilities.downloadvideo;
 
-import com.utilities.downloadvideo.json.JsonParse;
+
 import com.utilities.downloadvideo.properties.SuggestGetSet;
 import com.utilities.downloadvideo.utilities.AsincJsonParser;
 import com.utilities.downloadvideo.utilities.SimpleArrayAdapter;
@@ -8,11 +8,9 @@ import com.utilities.downloadvideo.utilities.SuggestionAdapter;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.os.StrictMode;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import java.util.List;
@@ -20,7 +18,6 @@ import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends Activity {
 
-    SimpleArrayAdapter listViewData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +27,8 @@ public class MainActivity extends Activity {
         AutoCompleteTextView acTextView = (AutoCompleteTextView) findViewById(R.id.T_findVideo);
         acTextView.setAdapter(new SuggestionAdapter(this,acTextView.getText().toString()));
 
-        
+        //?android:attr/listPreferredItemHeight
+
     }
     
 
@@ -45,17 +43,20 @@ public class MainActivity extends Activity {
         ListView listView = (ListView) findViewById(R.id.list_Videos);
 
         AutoCompleteTextView acTextView = (AutoCompleteTextView) findViewById(R.id.T_findVideo);
-        AsincJsonParser ajp = new AsincJsonParser();
-        List<SuggestGetSet> values = null;
-        try {
-            values = ajp.execute(acTextView.getText().toString()).get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
+        if (!acTextView.getText().toString().equals("")) {
+            AsincJsonParser ajp = new AsincJsonParser();
+            List<SuggestGetSet> values = null;
+            try {
+                values = ajp.execute(acTextView.getText().toString()).get();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+
+            listView.setAdapter(new SimpleArrayAdapter(this,values));
         }
 
-        listView.setAdapter(new SimpleArrayAdapter(this,values));
     }
     
     

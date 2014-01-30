@@ -18,7 +18,11 @@
         android:singleLine="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:autoText="true" />
+        android:autoText="true"
+        android:layout_gravity="left"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:textColor="@android:color/background_dark" />
 
     <Button
         style="@android:style/ButtonBar"
@@ -29,9 +33,10 @@
         android:singleLine="true"
         android:background="@android:drawable/ic_menu_search"
         android:alpha="1"
+        android:onClick="onClickSearchButton"
+        android:layout_alignRight="@+id/list_Videos"
         android:layout_alignTop="@+id/T_findVideo"
-        android:layout_alignParentRight="true"
-        android:onClick="onClickSearchButton" />
+        android:layout_above="@+id/list_Videos" />
 
     <ListView
         android:layout_width="wrap_content"
@@ -40,6 +45,8 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/T_findVideo"
         android:choiceMode="singleChoice"
-        android:scrollingCache="false" />
+        android:scrollingCache="false"
+        android:longClickable="true" />
+
 
 </RelativeLayout>

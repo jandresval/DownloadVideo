@@ -104,7 +104,7 @@ public class ImageLoader {
             //Find the correct scale value. It should be the power of 2.
             final int REQUIRED_SIZE=70;
             int width_tmp=o.outWidth, height_tmp=o.outHeight;
-            int scale=1;
+            int scale = 2;
             while(true){
                 if(width_tmp/2<REQUIRED_SIZE || height_tmp/2<REQUIRED_SIZE)
                     break;

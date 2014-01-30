@@ -2,8 +2,9 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_height="90dp"
     android:padding="6dip">
+
 
     <ImageView
         android:id="@+id/icon"
@@ -11,14 +12,17 @@
         android:layout_height="fill_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="6dip"
         android:contentDescription="TODO"
-        android:src="@drawable/ic_launcher"/>
+        android:src="@drawable/ic_image_launcher"
+        android:maxHeight="@dimen/max_icon_Height_thumbnail"
+        android:maxWidth="@dimen/max_icon_Width_thumbnail"
+        android:focusable="false"
+        android:scaleType="centerInside" />
 
     <TextView
         android:id="@+id/secondLine"
         android:layout_width="fill_parent"
-        android:layout_height="26dip"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_toRightOf="@+id/icon"
@@ -26,7 +30,8 @@
         android:singleLine="false"
         android:text="Description"
         android:textSize="12sp"
-        android:autoText="false" />
+        android:autoText="false"
+        android:paddingLeft="10dp" />
 
     <TextView
         android:id="@+id/label"
@@ -39,6 +44,8 @@
         android:layout_toRightOf="@+id/icon"
         android:gravity="center_vertical"
         android:text="Example application"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:paddingLeft="10dp" />
 
 </RelativeLayout>

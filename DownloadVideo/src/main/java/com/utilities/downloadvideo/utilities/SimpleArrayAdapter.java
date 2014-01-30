@@ -5,13 +5,14 @@ package com.utilities.downloadvideo.utilities;
  */
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
+
 import android.text.method.ScrollingMovementMethod;
+import android.util.DisplayMetrics;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -19,13 +20,6 @@ import android.widget.TextView;
 import com.utilities.downloadvideo.R;
 import com.utilities.downloadvideo.properties.SuggestGetSet;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-
-import java.io.InputStream;
 import java.util.List;
 
 
@@ -42,25 +36,50 @@ public class SimpleArrayAdapter extends ArrayAdapter<SuggestGetSet> {
         imageLoader = new ImageLoader(context);
     }
 
+    private class ViewHolder {
+        TextView textView;
+        TextView descriptionView;
+        ImageView imageView;
+    }
+
 
     @Override
     public View getView(int position, View contentView, ViewGroup parent){
+
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View rowView = inflater.inflate(R.layout.rowlayout,parent,false);
-        TextView textView = (TextView) rowView.findViewById(R.id.label);
-        textView.setMovementMethod(new ScrollingMovementMethod());
-        TextView descriptionView = (TextView) rowView.findViewById(R.id.secondLine);
-        descriptionView.setMovementMethod(new ScrollingMovementMethod());
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
+        ViewHolder title;
+
+        if(contentView == null) {
+            contentView = inflater.inflate(R.layout.rowlayout,parent,false);
+            title = new ViewHolder();
+            title.textView = (TextView) contentView.findViewById(R.id.label);
+            title.descriptionView = (TextView) contentView.findViewById(R.id.secondLine);
+            title.imageView = (ImageView) contentView.findViewById(R.id.icon);
+            contentView.setTag(title);
+        } else {
+            title = (ViewHolder) contentView.getTag();
+        }
         SuggestGetSet myClass;
         myClass = values.get(position);
-        textView.setText(myClass.getName());
-        descriptionView.setText(myClass.getDescription());
+        title.textView.setText(myClass.getName());
+        title.descriptionView.setText(myClass.getDescription());
+        imageLoader.DisplayImage(myClass.getImageUrl(),title.imageView);
 
-        imageLoader.DisplayImage(myClass.getImageUrl(),imageView);
 
-        return rowView;
+        return contentView;
+    }
+
+    public int getItemHeight(){
+        TypedValue value = new TypedValue();
+        DisplayMetrics metrics = new DisplayMetrics();
+
+        context.getTheme().resolveAttribute(
+                android.R.attr.listPreferredItemHeight, value, true);
+        ((WindowManager) (context.getSystemService(Context.WINDOW_SERVICE)))
+                .getDefaultDisplay().getMetrics(metrics);
+
+        return value.data;
     }
 
 }
