@@ -27,8 +27,6 @@ public class MainActivity extends Activity {
         AutoCompleteTextView acTextView = (AutoCompleteTextView) findViewById(R.id.T_findVideo);
         acTextView.setAdapter(new SuggestionAdapter(this,acTextView.getText().toString()));
 
-        //?android:attr/listPreferredItemHeight
-
     }
     
 
@@ -56,6 +54,10 @@ public class MainActivity extends Activity {
 
             listView.setAdapter(new SimpleArrayAdapter(this,values));
         }
+
+    }
+
+    public void onClickListView(View v) {
 
     }
     

@@ -20,10 +20,16 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <target>android-15</target>
+        <target>android-19</target>
       </config>
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/DownloadVideo/src/main/res/layout/activity_download_video.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/DownloadVideo/src/main/res/layout/activity_main.xml">
         <config>
           <device>3.2in HVGA slider (ADP1)</device>
@@ -43,20 +49,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c01ab7d3-6115-411e-8f6b-de7c1efbc368" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__support_v4_19_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_19_0_0.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/ImageLoader.java" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/ImageLoader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ComAndroidSupportAppcompatV71900_aar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ComAndroidSupportAppcompatV71900_aar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/res/layout/activity_download_video.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/downloadVideo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/res/menu/download_video.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/res/layout/fragment_download_video.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/DownloadVideo-DownloadVideo.iml" afterPath="$PROJECT_DIR$/DownloadVideo/DownloadVideo-DownloadVideo.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/MainActivity.java" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/SimpleArrayAdapter.java" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/SimpleArrayAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/src/main/res/values-sw600dp/dimens.xml" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/res/values-sw600dp/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/src/main/res/values-sw720dp-land/dimens.xml" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/res/values-sw720dp-land/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/src/main/res/values-v11/dimens.xml" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/res/values-v11/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/src/main/res/values-v14/dimens.xml" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/res/values-v14/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/src/main/res/layout/rowlayout.xml" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/res/layout/rowlayout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/build.gradle" afterPath="$PROJECT_DIR$/DownloadVideo/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DownloadVideo/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DownloadVideo/src/main/res/drawable-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/DownloadVideo/src/main/res/drawable-hdpi/ic_launcher.png" />
     </list>
     <ignored path="DownloadVideo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,52 +126,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rowlayout.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/layout/rowlayout.xml">
+      <file leaf-file-name="activity_download_video.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/layout/activity_download_video.xml">
+          <provider editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+              <folding />
+            </state>
+          </provider>
           <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
-          <provider editor-type-id="text-editor">
-            <state line="47" column="33" selection-start="1747" selection-end="1747" vertical-scroll-proportion="0.0" vertical-offset="348" max-vertical-offset="952">
-              <folding>
-                <element signature="e#562#596#0" expanded="true" />
-                <element signature="e#622#655#0" expanded="true" />
-              </folding>
+        </entry>
+      </file>
+      <file leaf-file-name="downloadVideo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/downloadVideo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="44" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1224">
+              <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_download_video.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/layout/fragment_download_video.xml">
+          <provider editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="47" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="11" column="25" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1207">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleArrayAdapter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/SimpleArrayAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="0" selection-start="1924" selection-end="1924" vertical-scroll-proportion="0.57020545" vertical-offset="449" max-vertical-offset="1309">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
           <provider editor-type-id="text-editor">
-            <state line="36" column="8" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0" vertical-offset="429" max-vertical-offset="986">
+            <state line="36" column="8" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="986">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleArrayAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/SimpleArrayAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="38" selection-start="1841" selection-end="1841" vertical-scroll-proportion="0.0" vertical-offset="689" max-vertical-offset="1547">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -462,6 +482,11 @@
                 <option name="name" value="preReleaseBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:appcompat-v7:19.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/DownloadVideo" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV71900Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/DownloadVideo" />
                 <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
@@ -559,15 +584,17 @@
         <option value="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/MemoryCache.java" />
         <option value="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/FileCache.java" />
         <option value="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/Utils.java" />
-        <option value="$PROJECT_DIR$/DownloadVideo/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/DownloadVideo/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/DownloadVideo/build/source/r/debug/com/utilities/downloadvideo/R.java" />
         <option value="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/ImageLoader.java" />
-        <option value="$PROJECT_DIR$/DownloadVideo/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/SimpleArrayAdapter.java" />
-        <option value="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/MainActivity.java" />
         <option value="$PROJECT_DIR$/DownloadVideo/src/main/res/layout/rowlayout.xml" />
+        <option value="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/downloadVideo.java" />
+        <option value="$PROJECT_DIR$/DownloadVideo/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/DownloadVideo/src/main/res/menu/download_video.xml" />
+        <option value="$PROJECT_DIR$/DownloadVideo/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/MainActivity.java" />
+        <option value="$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/SimpleArrayAdapter.java" />
       </list>
     </option>
   </component>
@@ -622,7 +649,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -729,127 +755,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DownloadVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DownloadVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DownloadVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DownloadVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DownloadVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DownloadVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-xxhdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DownloadVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DownloadVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DownloadVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-mdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DownloadVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DownloadVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DownloadVideo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-hdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -938,6 +844,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -959,6 +866,9 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="SearchEverywhereHistory" value="(" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Huawei_U8300" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1190,7 +1100,6 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24040632" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40938166" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295711" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295711" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1207,8 +1116,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19542067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19542067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295711" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40938166" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1235,47 +1145,19 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/SimpleArrayAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="71" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1224">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="17" selection-start="953" selection-end="953" vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="21743" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/ImageLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="12" selection-start="2369" selection-end="2369" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="3383">
-          <folding />
-        </state>
+        <state line="80" column="12" selection-start="2369" selection-end="2369" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="3383" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state line="36" column="31" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/SuggestionAdapter.java">
@@ -1286,9 +1168,7 @@
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/SimpleArrayAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="59" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="833">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1316,30 +1196,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/values-v11/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="45" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-          <folding />
-        </state>
+        <state line="1" column="45" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/values-v14/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="45" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-          <folding />
-        </state>
+        <state line="1" column="45" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/values-sw720dp-land/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="92" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
+        <state line="6" column="92" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/values-sw600dp/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
+        <state line="10" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272" />
       </provider>
     </entry>
     <entry file="file://D:/adt-bundle-windows-x86_64-20131030/sdk/sources/android-15/android/os/AsyncTask.java">
@@ -1380,11 +1252,6 @@
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/AsincJsonParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="0" selection-start="530" selection-end="530" vertical-scroll-proportion="0.43589744" vertical-offset="0" max-vertical-offset="858" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/SuggestionAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="1" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1156" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/properties/SuggestGetSet.java">
@@ -1454,13 +1321,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="17" selection-start="953" selection-end="953" vertical-scroll-proportion="0.54501605" vertical-offset="35" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="13" selection-start="332" selection-end="332" vertical-scroll-proportion="0.39963832" vertical-offset="0" max-vertical-offset="21267" />
@@ -1480,16 +1340,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/MemoryCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="302" selection-end="302" vertical-scroll-proportion="-1.2808219" vertical-offset="867" max-vertical-offset="1462">
-          <folding />
-        </state>
+        <state line="13" column="13" selection-start="302" selection-end="302" vertical-scroll-proportion="-1.2808219" vertical-offset="867" max-vertical-offset="1462" />
       </provider>
     </entry>
     <entry file="file://D:/adt-bundle-windows-x86_64-20131030/sdk/sources/android-15/android/widget/ImageView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="350" column="16" selection-start="12234" selection-end="12234" vertical-scroll-proportion="0.0" vertical-offset="5059" max-vertical-offset="17374">
-          <folding />
-        </state>
+        <state line="350" column="16" selection-start="12234" selection-end="12234" vertical-scroll-proportion="0.0" vertical-offset="5059" max-vertical-offset="17374" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/json/JsonParse.java">
@@ -1499,52 +1355,171 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/ImageLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="0" selection-start="4026" selection-end="4026" vertical-scroll-proportion="0.8441781" vertical-offset="1360" max-vertical-offset="3043">
+        <state line="129" column="0" selection-start="4026" selection-end="4026" vertical-scroll-proportion="0.8441781" vertical-offset="1360" max-vertical-offset="3043" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="28" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.8441781" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/layout/rowlayout.xml">
+      <provider editor-type-id="text-editor">
+        <state line="47" column="33" selection-start="1747" selection-end="1747" vertical-scroll-proportion="0.0" vertical-offset="348" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/layout/activity_download_video.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/menu/download_video.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="38" selection-start="413" selection-end="413" vertical-scroll-proportion="0.23287672" vertical-offset="0" max-vertical-offset="584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/layout/fragment_download_video.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/downloadVideo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="44" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state line="36" column="8" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0" vertical-offset="429" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state line="36" column="8" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0" vertical-offset="429" max-vertical-offset="986">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/SuggestionAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="1" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.52397263" vertical-offset="357" max-vertical-offset="1156" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="1207">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/utilities/SimpleArrayAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="38" selection-start="1841" selection-end="1841" vertical-scroll-proportion="0.0" vertical-offset="689" max-vertical-offset="1547">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="62" column="0" selection-start="1924" selection-end="1924" vertical-scroll-proportion="0.57020545" vertical-offset="449" max-vertical-offset="1309">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/java/com/utilities/downloadvideo/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="47" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DownloadVideo/src/main/res/layout/rowlayout.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="47" column="33" selection-start="1747" selection-end="1747" vertical-scroll-proportion="0.0" vertical-offset="348" max-vertical-offset="952">
-          <folding>
-            <element signature="e#562#596#0" expanded="true" />
-            <element signature="e#622#655#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Android API 15 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>DownloadVideo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: support-v4-19.0.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

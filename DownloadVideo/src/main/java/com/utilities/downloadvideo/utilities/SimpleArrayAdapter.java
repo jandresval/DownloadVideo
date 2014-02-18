@@ -60,6 +60,8 @@ public class SimpleArrayAdapter extends ArrayAdapter<SuggestGetSet> {
         } else {
             title = (ViewHolder) contentView.getTag();
         }
+
+
         SuggestGetSet myClass;
         myClass = values.get(position);
         title.textView.setText(myClass.getName());

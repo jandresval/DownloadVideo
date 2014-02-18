@@ -46,7 +46,7 @@
         android:layout_below="@+id/T_findVideo"
         android:choiceMode="singleChoice"
         android:scrollingCache="false"
-        android:longClickable="true" />
+        android:longClickable="false" />
 
 
 </RelativeLayout>
