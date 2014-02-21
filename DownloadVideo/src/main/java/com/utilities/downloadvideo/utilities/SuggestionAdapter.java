@@ -1,14 +1,14 @@
 package com.utilities.downloadvideo.utilities;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.utilities.downloadvideo.json.JsonParse;
-import com.utilities.downloadvideo.properties.SuggestGetSet;
- 
 import android.app.Activity;
 import android.widget.ArrayAdapter;
 import android.widget.Filter;
+
+import com.utilities.downloadvideo.json.JsonParse;
+import com.utilities.downloadvideo.properties.SuggestGetSet;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class SuggestionAdapter extends ArrayAdapter<String> {
 	

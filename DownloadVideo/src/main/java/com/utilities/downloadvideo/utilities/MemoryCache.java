@@ -3,13 +3,15 @@ package com.utilities.downloadvideo.utilities;
 /**
  * Created by jandresv on 21/01/14.
  */
+
+import android.graphics.Bitmap;
+import android.util.Log;
+
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
-import android.graphics.Bitmap;
-import android.util.Log;
 
 public class MemoryCache {
 

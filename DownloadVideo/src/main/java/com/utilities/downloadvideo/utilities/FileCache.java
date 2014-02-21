@@ -4,8 +4,9 @@ package com.utilities.downloadvideo.utilities;
  * Created by jandresv on 21/01/14.
  */
 
-import java.io.File;
 import android.content.Context;
+
+import java.io.File;
 
 public class FileCache {
 

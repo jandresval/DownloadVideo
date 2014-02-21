@@ -5,7 +5,6 @@ package com.utilities.downloadvideo.utilities;
  */
 
 import android.content.Context;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +17,7 @@ import com.utilities.downloadvideo.properties.SuggestGetSet;
 
 import java.util.List;
 
-import static android.content.Context.*;
+import static android.content.Context.LAYOUT_INFLATER_SERVICE;
 
 
 public class SimpleArrayAdapter extends ArrayAdapter<SuggestGetSet> {

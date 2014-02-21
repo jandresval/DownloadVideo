@@ -1,19 +1,20 @@
 package com.utilities.downloadvideo;
 
 
-import com.utilities.downloadvideo.properties.SuggestGetSet;
-import com.utilities.downloadvideo.utilities.AsincJsonParser;
-import com.utilities.downloadvideo.utilities.SimpleArrayAdapter;
-import com.utilities.downloadvideo.utilities.SuggestionAdapter;
-
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.Activity;
+import android.text.Editable;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
 import android.widget.ListView;
+
+import com.utilities.downloadvideo.properties.SuggestGetSet;
+import com.utilities.downloadvideo.utilities.AsincJsonParser;
+import com.utilities.downloadvideo.utilities.SimpleArrayAdapter;
+import com.utilities.downloadvideo.utilities.SuggestionAdapter;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -27,7 +28,16 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         
         AutoCompleteTextView acTextView = (AutoCompleteTextView) findViewById(R.id.T_findVideo);
-        acTextView.setAdapter(new SuggestionAdapter(this,acTextView.getText().toString()));
+
+        if (acTextView == null)
+            return;
+
+        Editable textView = acTextView.getText();
+
+        if (textView == null)
+            return;
+
+        acTextView.setAdapter(new SuggestionAdapter(this,textView.toString()));
 
     }
 
@@ -42,8 +52,18 @@ public class MainActivity extends Activity {
     public void onClickSearchButton(View v){
         ListView listView = (ListView) findViewById(R.id.list_Videos);
 
-        AutoCompleteTextView acTextView = (AutoCompleteTextView) findViewById(R.id.T_findVideo);
-        if (!acTextView.getText().toString().equals("")) {
+        AutoCompleteTextView acTextView;
+        acTextView = (AutoCompleteTextView) findViewById(R.id.T_findVideo);
+
+        if (acTextView == null)
+            return;
+
+        Editable textView = acTextView.getText();
+
+        if (textView == null)
+            return;
+
+        if (!textView.toString().equals("")) {
 
             AsincJsonParser ajp = new AsincJsonParser();
             List<SuggestGetSet> values = null;
@@ -60,7 +80,7 @@ public class MainActivity extends Activity {
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Intent intent = new Intent(getApplicationContext(),ProcessDownloadVideo.class);
+                    Intent intent = new Intent(getApplicationContext(), ProcessDownloadVideo.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                     startActivity(intent);
                 }
