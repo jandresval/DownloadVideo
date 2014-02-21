@@ -6,10 +6,12 @@ import com.utilities.downloadvideo.utilities.AsincJsonParser;
 import com.utilities.downloadvideo.utilities.SimpleArrayAdapter;
 import com.utilities.downloadvideo.utilities.SuggestionAdapter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
 import android.widget.ListView;
 
@@ -28,7 +30,7 @@ public class MainActivity extends Activity {
         acTextView.setAdapter(new SuggestionAdapter(this,acTextView.getText().toString()));
 
     }
-    
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -42,6 +44,7 @@ public class MainActivity extends Activity {
 
         AutoCompleteTextView acTextView = (AutoCompleteTextView) findViewById(R.id.T_findVideo);
         if (!acTextView.getText().toString().equals("")) {
+
             AsincJsonParser ajp = new AsincJsonParser();
             List<SuggestGetSet> values = null;
             try {
@@ -53,13 +56,19 @@ public class MainActivity extends Activity {
             }
 
             listView.setAdapter(new SimpleArrayAdapter(this,values));
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Intent intent = new Intent(getApplicationContext(),ProcessDownloadVideo.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                    startActivity(intent);
+                }
+            });
         }
 
     }
 
-    public void onClickListView(View v) {
-
-    }
     
     
 }
